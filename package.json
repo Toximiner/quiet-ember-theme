@@ -2,7 +2,7 @@
   "name": "quiet-ember-theme",
   "displayName": "Quiet Ember Theme",
   "description": "A dark theme with warm accents and distinct Python semantic colors for types, attributes, parameters and keyword arguments.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "Toximiner",
   "license": "MIT",
   "engines": {
