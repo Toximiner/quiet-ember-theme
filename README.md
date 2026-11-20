@@ -1,12 +1,12 @@
 # Quiet Ember Theme
 
-A dark Visual Studio Code theme with warm accents, a charcoal background and clear distinctions between Python syntax categories. Inspired by the restrained feel of JetBrains editors, with its own syntax palette.
+A dark Visual Studio Code theme with warm accents, a charcoal background and clear distinctions between Python syntax categories. Based on the feel and core syntax colors of the JetBrains Dark editor scheme, with additional distinctions for Python attributes and parameters.
 
 ## Preview
 
-![Quiet Ember — a fictional recipe example in Python with Pylance](assets/python-palette.png)
+![Quiet Ember — a fictional library example in Python with Pylance](assets/python-palette.png)
 
-The preview uses a **fully fictional recipe example written for this theme**. Captured in VS Code with Python and Pylance enabled. Source: [examples/palette.py](examples/palette.py).
+The preview uses a **fully fictional library example written for this theme**. Captured in VS Code with Python and Pylance enabled. Source: [examples/palette.py](examples/palette.py).
 
 ## Install
 
@@ -22,16 +22,22 @@ You can also download a `.vsix` from [GitHub Releases](https://github.com/Toximi
 
 | Category | Color | Example |
 | --- | --- | --- |
-| Types and classes | Sand | `int`, `str`, `Ingredient`, `Portion` |
-| Functions and methods | Blue | `make_recipe`, `scaled` |
-| Attributes | Slate blue | `self.grams`, `book.title` |
-| `self` and `cls` | Purple | `self`, `cls` |
-| Function parameters | Pale cyan | `factor`, `servings` in a definition |
-| Keyword argument names | Warm orange | `grams=80.0` |
-| Strings | Green | `"Oats"` |
+| Classes and user-defined types | Neutral gray | `Book`, `Status` |
+| Built-in Python types | Lavender | `int`, `str`, `list` |
+| Functions and methods | Blue | `make_report`, `book.reserve` |
+| Enum values and readonly variables | Sand | `Status.RESERVED` |
+| Attributes | Slate blue | `self.copies`, `book.title` |
+| `self` and `cls` | Muted purple | `self`, `cls` |
+| Function parameters | Pale cyan | `reader`, `days` in a definition |
+| Keyword argument names | Burnt orange | `days=14` |
+| Keywords | Warm orange | `class`, `def`, `return` |
+| Strings | Green | `"Ocean Stories"` |
+| Numbers | Teal | `12`, `1.25` |
 | Comments | Muted gray | `# explanation` |
 
-The theme includes editor, sidebar, tabs, menus, terminal, diff and Git status colors. Brackets use a consistent warm color rather than a rainbow.
+The theme includes editor, sidebar, tabs, menus, terminal, diff and Git status colors. Brackets use a consistent neutral color rather than a rainbow.
+
+Palette references: JetBrains' [Dark scheme](https://github.com/JetBrains/intellij-community/blob/master/platform/platform-resources/src/themes/expUI/expUI_darkScheme.xml) and [Python highlighter](https://github.com/JetBrains/intellij-community/blob/master/python/python-syntax-core/src/com/jetbrains/python/highlighting/PyHighlighter.java). This is an adaptation for VS Code and Pylance, with deliberate differences such as sand enum values and distinct attribute colors.
 
 ## Python highlighting
 

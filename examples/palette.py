@@ -1,51 +1,35 @@
-# QUIET EMBER — a fictional recipe example
-# Sand types · cyan parameters · slate-blue attributes
+# Fictional library example — syntax palette comparison
 from dataclasses import dataclass
 from enum import Enum
 
-class Portion(Enum):
-    SMALL = "small"
-    LARGE = "large"
+class Status(Enum):
+    READY = "ready"
+    RESERVED = "reserved"
 
 @dataclass
-class Ingredient:
-    """A fictional ingredient used only to demonstrate syntax colors."""
-    name: str
-    grams: float
-    organic: bool = False
+class Book:
+    """A library book with a title and availability status."""
+    title: str
+    copies: int = 3
+    available: bool = True
 
-    @property
-    def label(self) -> str:
-        # Purple self; slate-blue attributes after the dot
-        return f"{self.name}: {self.grams:.1f} g"
+    def label(self, prefix: str = "Book") -> str:
+        return f"{prefix}: {self.title} ({self.copies})"
 
-    def scaled(self, factor: float = 1.0) -> "Ingredient":
-        if factor <= 0:
-            raise ValueError("The scale must be positive")
-        return Ingredient(
-            name=self.name,
-            grams=self.grams * factor,
-            organic=self.organic,
-        )
+    def reserve(self, reader: str, days: int = 7) -> dict[str, str | int]:
+        if not self.available:
+            raise ValueError("This book is unavailable")
+        self.available = False
+        return {"reader": reader, "days": days}
 
 
-def make_recipe(portion: Portion, servings: int = 2) -> list[Ingredient]:
-    ingredients = [
-        Ingredient(name="Oats", grams=80.0, organic=True),
-        Ingredient(name="Berries", grams=120.0),
-    ]
-    multiplier = 1.5 if portion is Portion.LARGE else 1.0
-    return [item.scaled(factor=multiplier * servings) for item in ingredients]
+def make_report(book: Book, limit: int = 5) -> list[str]:
+    labels = [book.label(prefix="Featured") for _ in range(limit)]
+    return labels
 
-
-class RecipeBook:
-    def __init__(self, title: str) -> None:
-        self.title = title
-        self.pages: list[str] = []
-
-book = RecipeBook(title="Weekend cooking")  # Class and keyword argument
-recipe = make_recipe(portion=Portion.SMALL, servings=2)
-book.pages.append("Berry bowl")
-message = f"{book.title}: {len(recipe):02d} ingredients"
-# Strings, numbers, booleans, defaults and type annotations
-options = {"temperature": 180, "timer": 12.5, "covered": False}
+book = Book(title="Ocean Stories", copies=12, available=True)
+reservation = book.reserve(reader="Alex", days=14)
+report = make_report(book=book, limit=2)
+status = Status.RESERVED
+ratio = 1.25
+message = f"{book.title}: {len(report):02d} labels"

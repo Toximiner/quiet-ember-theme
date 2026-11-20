@@ -159,12 +159,12 @@
     "peekViewResult.background": "#1C1E22",
     "peekViewTitle.background": "#292D34",
     "peekView.border": "#6E95BD",
-    "editorBracketHighlight.foreground1": "#B9A640",
-    "editorBracketHighlight.foreground2": "#B9A640",
-    "editorBracketHighlight.foreground3": "#B9A640",
-    "editorBracketHighlight.foreground4": "#B9A640",
-    "editorBracketHighlight.foreground5": "#B9A640",
-    "editorBracketHighlight.foreground6": "#B9A640"
+    "editorBracketHighlight.foreground1": "#BCBEC4",
+    "editorBracketHighlight.foreground2": "#BCBEC4",
+    "editorBracketHighlight.foreground3": "#BCBEC4",
+    "editorBracketHighlight.foreground4": "#BCBEC4",
+    "editorBracketHighlight.foreground5": "#BCBEC4",
+    "editorBracketHighlight.foreground6": "#BCBEC4"
   },
   "tokenColors": [
     {
@@ -174,7 +174,7 @@
         "punctuation.definition.comment"
       ],
       "settings": {
-        "foreground": "#808890",
+        "foreground": "#7A7E85",
         "fontStyle": ""
       }
     },
@@ -185,7 +185,7 @@
         "constant.other.symbol"
       ],
       "settings": {
-        "foreground": "#64B16F",
+        "foreground": "#6AAB73",
         "fontStyle": ""
       }
     },
@@ -195,8 +195,8 @@
         "string.quoted.docstring.multi.python"
       ],
       "settings": {
-        "foreground": "#64B16F",
-        "fontStyle": ""
+        "foreground": "#5F826B",
+        "fontStyle": "italic"
       }
     },
     {
@@ -207,7 +207,7 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "#8AADBF",
+        "foreground": "#2AACB8",
         "fontStyle": ""
       }
     },
@@ -219,7 +219,7 @@
         "storage.type"
       ],
       "settings": {
-        "foreground": "#D58D5D",
+        "foreground": "#CF8E6D",
         "fontStyle": ""
       }
     },
@@ -230,19 +230,17 @@
         "punctuation"
       ],
       "settings": {
-        "foreground": "#A9B7C6",
+        "foreground": "#BCBEC4",
         "fontStyle": ""
       }
     },
     {
       "name": "Functions and methods",
       "scope": [
-        "entity.name.function",
-        "support.function",
-        "meta.function-call.generic.python"
+        "entity.name.function"
       ],
       "settings": {
-        "foreground": "#4CA8FF",
+        "foreground": "#56A8F5",
         "fontStyle": ""
       }
     },
@@ -255,7 +253,7 @@
         "support.class"
       ],
       "settings": {
-        "foreground": "#CBC6B1",
+        "foreground": "#BCBEC4",
         "fontStyle": ""
       }
     },
@@ -266,7 +264,7 @@
         "entity.name.variable"
       ],
       "settings": {
-        "foreground": "#A9B7C6",
+        "foreground": "#BCBEC4",
         "fontStyle": ""
       }
     },
@@ -276,7 +274,7 @@
         "variable.parameter"
       ],
       "settings": {
-        "foreground": "#A7C5D1",
+        "foreground": "#AAC4CE",
         "fontStyle": ""
       }
     },
@@ -288,7 +286,7 @@
         "variable.parameter.function.language.special.cls.python"
       ],
       "settings": {
-        "foreground": "#B979B8",
+        "foreground": "#94558D",
         "fontStyle": ""
       }
     },
@@ -312,7 +310,7 @@
         "punctuation.definition.decorator.python"
       ],
       "settings": {
-        "foreground": "#BEAC47",
+        "foreground": "#B3AE60",
         "fontStyle": ""
       }
     },
@@ -322,7 +320,7 @@
         "constant.character.escape"
       ],
       "settings": {
-        "foreground": "#D1A467",
+        "foreground": "#CF8E6D",
         "fontStyle": ""
       }
     },
@@ -334,7 +332,7 @@
         "support.module"
       ],
       "settings": {
-        "foreground": "#A9B7C6",
+        "foreground": "#BCBEC4",
         "fontStyle": ""
       }
     },
@@ -356,7 +354,7 @@
         "markup.heading"
       ],
       "settings": {
-        "foreground": "#4CA8FF",
+        "foreground": "#56A8F5",
         "fontStyle": "bold"
       }
     },
@@ -376,7 +374,7 @@
         "variable.parameter.function-call.python"
       ],
       "settings": {
-        "foreground": "#DB8A57",
+        "foreground": "#AA4926",
         "fontStyle": ""
       }
     },
@@ -387,7 +385,7 @@
         "storage.type.class.python"
       ],
       "settings": {
-        "foreground": "#D4B728"
+        "foreground": "#CF8E6D"
       }
     },
     {
@@ -397,7 +395,7 @@
         "keyword.control.import.python"
       ],
       "settings": {
-        "foreground": "#2F9FE7"
+        "foreground": "#CF8E6D"
       }
     },
     {
@@ -407,7 +405,7 @@
         "support.type.builtin.python"
       ],
       "settings": {
-        "foreground": "#CBC6B1"
+        "foreground": "#8888C6"
       }
     },
     {
@@ -416,40 +414,75 @@
         "constant.language.python"
       ],
       "settings": {
-        "foreground": "#D58D5D"
+        "foreground": "#CF8E6D"
+      }
+    },
+    {
+      "name": "Python call names",
+      "scope": [
+        "meta.function-call.generic.python"
+      ],
+      "settings": {
+        "foreground": "#56A8F5"
+      }
+    },
+    {
+      "name": "Python builtin call names",
+      "scope": [
+        "support.function.builtin.python"
+      ],
+      "settings": {
+        "foreground": "#8888C6"
       }
     }
   ],
   "semanticTokenColors": {
-    "namespace": "#A9B7C6",
-    "type": "#CBC6B1",
-    "class": "#CBC6B1",
-    "enum": "#CBC6B1",
-    "interface": "#CBC6B1",
+    "namespace": "#BCBEC4",
+    "type": "#BCBEC4",
+    "class": "#BCBEC4",
+    "enum": "#BCBEC4",
+    "interface": "#BCBEC4",
     "typeParameter": "#A7C5D1",
     "parameter": "#A7C5D1",
-    "variable": "#A9B7C6",
+    "variable": "#BCBEC4",
     "property": "#8CADCD",
-    "enumMember": "#8CADCD",
-    "function": "#4CA8FF",
-    "method": "#4CA8FF",
-    "decorator": "#BEAC47",
-    "keyword": "#D58D5D",
-    "comment": "#808890",
-    "string": "#64B16F",
-    "number": "#8AADBF",
-    "operator": "#A9B7C6",
-    "variable.readonly": "#8AADBF",
+    "enumMember": "#C4AE78",
+    "function": "#56A8F5",
+    "method": "#56A8F5",
+    "decorator": "#B3AE60",
+    "keyword": "#CF8E6D",
+    "comment": "#7A7E85",
+    "string": "#6AAB73",
+    "number": "#2AACB8",
+    "operator": "#BCBEC4",
+    "variable.readonly": "#C4AE78",
     "*.deprecated": {
       "strikethrough": true
     },
-    "selfParameter": "#B979B8",
-    "clsParameter": "#B979B8",
-    "parameter.keywordArgument:python": "#DB8A57",
-    "parameter:python": "#A7C5D1",
+    "selfParameter": "#94558D",
+    "clsParameter": "#94558D",
+    "parameter.keywordArgument:python": "#AA4926",
+    "parameter:python": "#AAC4CE",
     "variable.classMember:python": "#8CADCD",
-    "builtinConstant:python": "#D58D5D",
-    "selfParameter:python": "#B979B8",
-    "clsParameter:python": "#B979B8"
+    "builtinConstant:python": "#CF8E6D",
+    "selfParameter:python": "#94558D",
+    "clsParameter:python": "#94558D",
+    "function.declaration": "#56A8F5",
+    "method.declaration": "#56A8F5",
+    "function.defaultLibrary": "#8888C6",
+    "class.defaultLibrary": "#8888C6",
+    "class.builtin:python": "#8888C6",
+    "type.builtin:python": "#8888C6",
+    "function.builtin:python": "#8888C6",
+    "method.builtin:python": "#8888C6",
+    "function.decorator:python": "#B3AE60",
+    "method.decorator:python": "#B3AE60",
+    "magicFunction:python": "#B200B2",
+    "enumMember:python": "#C4AE78",
+    "enumMember.readonly:python": "#C4AE78",
+    "function:python": "#56A8F5",
+    "method:python": "#56A8F5",
+    "variable.callable:python": "#56A8F5",
+    "property.callable:python": "#56A8F5"
   }
 }
