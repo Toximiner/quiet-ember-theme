@@ -5,3 +5,4 @@
 *.vsix
 SHA256SUMS
 node_modules/**
+scripts/**
