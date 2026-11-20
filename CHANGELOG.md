@@ -1,5 +1,5 @@
 # Changelog
 
-## 1.0.1
+## 1.0.2
 
-- Use a neutral, fictional cooking example for the theme preview.
+- Add a fictional cooking example and a neutral English palette preview.

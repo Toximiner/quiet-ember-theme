@@ -4,7 +4,9 @@ A dark Visual Studio Code theme with warm accents, a charcoal background and cle
 
 ## Preview
 
-A neutral, fictional recipe example is being prepared for the preview.
+![Quiet Ember — a fictional recipe example in Python with Pylance](assets/python-palette.png)
+
+The preview uses a **fully fictional recipe example written for this theme**. Captured in VS Code with Python and Pylance enabled. Source: [examples/palette.py](examples/palette.py).
 
 ## Install
 
