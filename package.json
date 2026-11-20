@@ -1,0 +1,44 @@
+{
+  "name": "quiet-ember-theme",
+  "displayName": "Quiet Ember Theme",
+  "description": "A dark theme with warm accents and distinct Python semantic colors for types, attributes, parameters and keyword arguments.",
+  "version": "1.0.1",
+  "publisher": "Toximiner",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Quiet Ember",
+        "uiTheme": "vs-dark",
+        "path": "./themes/quiet-ember.json"
+      }
+    ]
+  },
+  "homepage": "https://github.com/Toximiner/quiet-ember-theme#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Toximiner/quiet-ember-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Toximiner/quiet-ember-theme/issues"
+  },
+  "keywords": [
+    "dark",
+    "theme",
+    "python",
+    "pylance",
+    "jetbrains"
+  ],
+  "scripts": {
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "4.1.1"
+  }
+}
