@@ -41,6 +41,8 @@ You can also download a `.vsix` from [GitHub Releases](https://github.com/Toximi
 
 The theme includes editor, sidebar, tabs, menus, terminal, diff and Git status colors. Brackets use a consistent neutral color rather than a rainbow.
 
+Peek View uses a muted amber highlight for the selected reference, including locations opened from Universal Usage Lens. This keeps navigation highlights visible without the bright default accent.
+
 Built-in functions such as `len` and `print` are predefined Python symbols, not reserved keywords. They use the same lavender color as built-in types. Python keywords follow the PyCharm reference: `class` is golden yellow, `def` is green and other keywords such as `return` are warm orange.
 
 Palette references: JetBrains' [Dark scheme](https://github.com/JetBrains/intellij-community/blob/master/platform/platform-resources/src/themes/expUI/expUI_darkScheme.xml) and [Python highlighter](https://github.com/JetBrains/intellij-community/blob/master/python/python-syntax-core/src/com/jetbrains/python/highlighting/PyHighlighter.java). This is an adaptation for VS Code and Pylance, with deliberate differences such as sand enum values and distinct attribute colors.

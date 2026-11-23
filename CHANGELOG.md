@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+
+- Soften the selected usage highlight in Peek View with a muted amber color.
+
 ## 1.2.0
 
 - Show Python special methods such as `__init__` and `__str__` in bright purple in the preview.
