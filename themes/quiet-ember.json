@@ -379,13 +379,21 @@
       }
     },
     {
-      "name": "Python definitions",
+      "name": "Python class keyword",
       "scope": [
-        "storage.type.function.python",
         "storage.type.class.python"
       ],
       "settings": {
-        "foreground": "#CF8E6D"
+        "foreground": "#E8BA36"
+      }
+    },
+    {
+      "name": "Python function definition keyword",
+      "scope": [
+        "storage.type.function.python"
+      ],
+      "settings": {
+        "foreground": "#53A456"
       }
     },
     {
@@ -406,6 +414,15 @@
       ],
       "settings": {
         "foreground": "#8888C6"
+      }
+    },
+    {
+      "name": "Python magic function names",
+      "scope": [
+        "support.function.magic.python"
+      ],
+      "settings": {
+        "foreground": "#B200B2"
       }
     },
     {
@@ -478,6 +495,7 @@
     "function.decorator:python": "#B3AE60",
     "method.decorator:python": "#B3AE60",
     "magicFunction:python": "#B200B2",
+    "magicFunction.declaration:python": "#B200B2",
     "enumMember:python": "#C4AE78",
     "enumMember.readonly:python": "#C4AE78",
     "function:python": "#56A8F5",

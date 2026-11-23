@@ -6,7 +6,7 @@ A dark Visual Studio Code theme with warm accents, a charcoal background and cle
 
 ![Quiet Ember — a fictional library example in Python with Pylance](assets/python-palette.png)
 
-The preview uses a **fully fictional library example written for this theme**. Captured in VS Code with Python and Pylance enabled. Source: [examples/palette.py](examples/palette.py).
+The preview uses a **fully fictional library example written for this theme**, rendered with the theme palette to show Python special methods such as `__init__` and `__str__` in bright purple. Source: [examples/palette.py](examples/palette.py).
 
 ## Install
 
@@ -24,18 +24,24 @@ You can also download a `.vsix` from [GitHub Releases](https://github.com/Toximi
 | --- | --- | --- |
 | Classes and user-defined types | Neutral gray | `Book`, `Status` |
 | Built-in Python types | Lavender | `int`, `str`, `list` |
+| Built-in functions | Lavender | `len`, `print`, `next` |
 | Functions and methods | Blue | `make_report`, `book.reserve` |
+| Python special methods | Bright purple | `__init__`, `__str__` |
 | Enum values and readonly variables | Sand | `Status.RESERVED` |
 | Attributes | Slate blue | `self.copies`, `book.title` |
 | `self` and `cls` | Muted purple | `self`, `cls` |
 | Function parameters | Pale cyan | `reader`, `days` in a definition |
 | Keyword argument names | Burnt orange | `days=14` |
-| Keywords | Warm orange | `class`, `def`, `return` |
+| Python class keyword | Golden yellow | `class` |
+| Python function keyword | Green | `def` |
+| Other Python keywords | Warm orange | `return`, `if`, `raise` |
 | Strings | Green | `"Ocean Stories"` |
 | Numbers | Teal | `12`, `1.25` |
 | Comments | Muted gray | `# explanation` |
 
 The theme includes editor, sidebar, tabs, menus, terminal, diff and Git status colors. Brackets use a consistent neutral color rather than a rainbow.
+
+Built-in functions such as `len` and `print` are predefined Python symbols, not reserved keywords. They use the same lavender color as built-in types. Python keywords follow the PyCharm reference: `class` is golden yellow, `def` is green and other keywords such as `return` are warm orange.
 
 Palette references: JetBrains' [Dark scheme](https://github.com/JetBrains/intellij-community/blob/master/platform/platform-resources/src/themes/expUI/expUI_darkScheme.xml) and [Python highlighter](https://github.com/JetBrains/intellij-community/blob/master/python/python-syntax-core/src/com/jetbrains/python/highlighting/PyHighlighter.java). This is an adaptation for VS Code and Pylance, with deliberate differences such as sand enum values and distinct attribute colors.
 
