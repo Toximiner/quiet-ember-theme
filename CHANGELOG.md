@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2
+
+- Color Python logical operators (`and`, `or`, `not`, `in`, `is`) in the keyword orange instead of the pale operator gray, so `not in` no longer blends in with variables.
+
 ## 1.2.1
 
 - Soften the selected usage highlight in Peek View with a muted amber color.
