@@ -218,6 +218,7 @@
       "name": "Keywords",
       "scope": [
         "keyword",
+        "keyword.operator.logical.python",
         "storage",
         "storage.type"
       ],
